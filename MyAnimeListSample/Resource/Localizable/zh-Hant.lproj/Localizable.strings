@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyAnimeListSample
+
+  Created by GUO-HAO CHEN on 2022/1/4.
+  
+*/
+
+"Top List" = "熱門列表";
+"Favorite List" = "收藏列表";
+
+"Delete" = "刪除";
