@@ -13,6 +13,12 @@
 		3FA810A3278440E500C3BFB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810A5278440E500C3BFB6 /* InfoPlist.strings */; };
 		3FA810AE2784448E00C3BFB6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810AD2784448E00C3BFB6 /* Log.swift */; };
 		3FA810B0278444B700C3BFB6 /* Log+Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810AF278444B700C3BFB6 /* Log+Print.swift */; };
+		3FA810B327854CB400C3BFB6 /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B227854CB400C3BFB6 /* Localizator.swift */; };
+		3FA810B527854E1800C3BFB6 /* Button+XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B427854E1800C3BFB6 /* Button+XIBLocalizable.swift */; };
+		3FA810B727854E2700C3BFB6 /* UILabel+XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B627854E2700C3BFB6 /* UILabel+XIBLocalizable.swift */; };
+		3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */; };
+		3FA810BC27854F0600C3BFB6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BB27854F0600C3BFB6 /* String+Localized.swift */; };
+		3FA810BF2785501F00C3BFB6 /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BE2785501F00C3BFB6 /* GHError.swift */; };
 		3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865252782E49C005A13A6 /* AppDelegate.swift */; };
 		3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865272782E49C005A13A6 /* SceneDelegate.swift */; };
 		3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8652E2782E49E005A13A6 /* Assets.xcassets */; };
@@ -53,6 +59,12 @@
 		3FA810A6278440E600C3BFB6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3FA810AD2784448E00C3BFB6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		3FA810AF278444B700C3BFB6 /* Log+Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log+Print.swift"; sourceTree = "<group>"; };
+		3FA810B227854CB400C3BFB6 /* Localizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
+		3FA810B427854E1800C3BFB6 /* Button+XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+XIBLocalizable.swift"; sourceTree = "<group>"; };
+		3FA810B627854E2700C3BFB6 /* UILabel+XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+XIBLocalizable.swift"; sourceTree = "<group>"; };
+		3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+XIBLocalizable.swift"; sourceTree = "<group>"; };
+		3FA810BB27854F0600C3BFB6 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		3FA810BE2785501F00C3BFB6 /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
 		3FD865222782E49C005A13A6 /* MyAnimeListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnimeListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD865252782E49C005A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD865272782E49C005A13A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +141,7 @@
 		3FA810A7278443CF00C3BFB6 /* ExClass */ = {
 			isa = PBXGroup;
 			children = (
+				3FA810B127854C9B00C3BFB6 /* Localizator */,
 				3FA810AC2784442B00C3BFB6 /* Log */,
 			);
 			path = ExClass;
@@ -158,6 +171,7 @@
 		3FA810AB2784440700C3BFB6 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				3FA810BE2785501F00C3BFB6 /* GHError.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -165,10 +179,38 @@
 		3FA810AC2784442B00C3BFB6 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				3FA810BD27854FA500C3BFB6 /* Extension */,
 				3FA810AD2784448E00C3BFB6 /* Log.swift */,
-				3FA810AF278444B700C3BFB6 /* Log+Print.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		3FA810B127854C9B00C3BFB6 /* Localizator */ = {
+			isa = PBXGroup;
+			children = (
+				3FA810BA27854EEC00C3BFB6 /* Extension */,
+				3FA810B227854CB400C3BFB6 /* Localizator.swift */,
+			);
+			path = Localizator;
+			sourceTree = "<group>";
+		};
+		3FA810BA27854EEC00C3BFB6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3FA810BB27854F0600C3BFB6 /* String+Localized.swift */,
+				3FA810B427854E1800C3BFB6 /* Button+XIBLocalizable.swift */,
+				3FA810B627854E2700C3BFB6 /* UILabel+XIBLocalizable.swift */,
+				3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3FA810BD27854FA500C3BFB6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3FA810AF278444B700C3BFB6 /* Log+Print.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		3FD865192782E49C005A13A6 = {
@@ -417,10 +459,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */,
+				3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */,
+				3FA810B727854E2700C3BFB6 /* UILabel+XIBLocalizable.swift in Sources */,
 				3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */,
+				3FA810B527854E1800C3BFB6 /* Button+XIBLocalizable.swift in Sources */,
 				3FA810AE2784448E00C3BFB6 /* Log.swift in Sources */,
 				3FA810942784042F00C3BFB6 /* Config.swift in Sources */,
 				3FA810B0278444B700C3BFB6 /* Log+Print.swift in Sources */,
+				3FA810B327854CB400C3BFB6 /* Localizator.swift in Sources */,
+				3FA810BF2785501F00C3BFB6 /* GHError.swift in Sources */,
+				3FA810BC27854F0600C3BFB6 /* String+Localized.swift in Sources */,
 				3FA81097278405AB00C3BFB6 /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
