@@ -19,6 +19,13 @@
 		3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */; };
 		3FA810BC27854F0600C3BFB6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BB27854F0600C3BFB6 /* String+Localized.swift */; };
 		3FA810BF2785501F00C3BFB6 /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BE2785501F00C3BFB6 /* GHError.swift */; };
+		3FA810D02785888900C3BFB6 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */; };
+		3FA810D12785888900C3BFB6 /* HomeTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */; };
+		3FA810D22785888900C3BFB6 /* HomeTabBarInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */; };
+		3FA810D32785888900C3BFB6 /* HomeTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */; };
+		3FA810D627858EB300C3BFB6 /* HomeTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */; };
+		3FA810D8278590B400C3BFB6 /* HomeTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */; };
+		3FA810DB278598FE00C3BFB6 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810DA278598FE00C3BFB6 /* UIViewController+Storyboard.swift */; };
 		3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865252782E49C005A13A6 /* AppDelegate.swift */; };
 		3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865272782E49C005A13A6 /* SceneDelegate.swift */; };
 		3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8652E2782E49E005A13A6 /* Assets.xcassets */; };
@@ -65,6 +72,13 @@
 		3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+XIBLocalizable.swift"; sourceTree = "<group>"; };
 		3FA810BB27854F0600C3BFB6 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		3FA810BE2785501F00C3BFB6 /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
+		3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarPresenter.swift; sourceTree = "<group>"; };
+		3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarInterface.swift; sourceTree = "<group>"; };
+		3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarRouter.swift; sourceTree = "<group>"; };
+		3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarInteractor.swift; sourceTree = "<group>"; };
+		3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBarController.storyboard; sourceTree = "<group>"; };
+		3FA810DA278598FE00C3BFB6 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		3FD865222782E49C005A13A6 /* MyAnimeListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnimeListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD865252782E49C005A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD865272782E49C005A13A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +171,7 @@
 		3FA810A9278443EB00C3BFB6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3FA810D9278598E700C3BFB6 /* UIViewController */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -211,6 +226,27 @@
 				3FA810AF278444B700C3BFB6 /* Log+Print.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3FA810C02785514000C3BFB6 /* HomeTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */,
+				3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */,
+				3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */,
+				3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */,
+				3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */,
+				3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */,
+			);
+			path = HomeTabBarController;
+			sourceTree = "<group>";
+		};
+		3FA810D9278598E700C3BFB6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA810DA278598FE00C3BFB6 /* UIViewController+Storyboard.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		3FD865192782E49C005A13A6 = {
@@ -296,6 +332,7 @@
 		3FD865582782EB79005A13A6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3FA810C02785514000C3BFB6 /* HomeTabBarController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -431,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD865322782E49E005A13A6 /* LaunchScreen.storyboard in Resources */,
+				3FA810D8278590B400C3BFB6 /* HomeTabBarController.storyboard in Resources */,
 				3FA810A3278440E500C3BFB6 /* InfoPlist.strings in Resources */,
 				3FA8109F278440DB00C3BFB6 /* Localizable.strings in Resources */,
 				3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */,
@@ -461,9 +499,15 @@
 				3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */,
 				3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */,
 				3FA810B727854E2700C3BFB6 /* UILabel+XIBLocalizable.swift in Sources */,
+				3FA810D22785888900C3BFB6 /* HomeTabBarInterface.swift in Sources */,
 				3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */,
+				3FA810DB278598FE00C3BFB6 /* UIViewController+Storyboard.swift in Sources */,
+				3FA810D02785888900C3BFB6 /* HomeTabBarController.swift in Sources */,
+				3FA810D12785888900C3BFB6 /* HomeTabBarPresenter.swift in Sources */,
+				3FA810D32785888900C3BFB6 /* HomeTabBarRouter.swift in Sources */,
 				3FA810B527854E1800C3BFB6 /* Button+XIBLocalizable.swift in Sources */,
 				3FA810AE2784448E00C3BFB6 /* Log.swift in Sources */,
+				3FA810D627858EB300C3BFB6 /* HomeTabBarInteractor.swift in Sources */,
 				3FA810942784042F00C3BFB6 /* Config.swift in Sources */,
 				3FA810B0278444B700C3BFB6 /* Log+Print.swift in Sources */,
 				3FA810B327854CB400C3BFB6 /* Localizator.swift in Sources */,
@@ -588,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -644,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
