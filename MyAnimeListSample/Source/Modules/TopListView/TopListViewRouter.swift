@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import WebKit
+import UIKit
 
 final class TopListViewRouter {
 	weak var view: Viewable? = nil
@@ -24,6 +24,16 @@ extension TopListViewRouter: PresenterToRouterTopListProtocol {
 			self.view?.present(navigationController, animated: true, completion: nil)
 		}
 	}
+	
+	func showFavoriteListView() {
+		let viewController = FavoriteListViewRouter.createModule()
+		let navigationController = UINavigationController(rootViewController: viewController)
+		self.view?.present(navigationController, animated: true, completion: nil)
+	}
+	
+	func showSelectView() {
+		
+	}
 }
 
 extension TopListViewRouter: WireframeTopListProtocol {
@@ -39,6 +49,7 @@ extension TopListViewRouter {
 		let interator = TopListViewInteractor()
 		let router = TopListViewRouter(view: view)
 		let presenter = TopListViewPresenter(view: view, interactor: interator, router: router)
+		interator.presenter = presenter
 		
 		return presenter
 	}

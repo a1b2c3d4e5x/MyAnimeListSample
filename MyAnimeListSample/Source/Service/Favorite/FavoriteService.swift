@@ -31,11 +31,6 @@ final class FavoriteService: ModelManagerProtocol {
 	private init() {
 		self.list = self.userDefaultService.favoriteList ?? []
 		self.set = Set<Model>(self.list)
-		
-		
-		self.userDefaultService.observe(key: .favoriteList, options: .new) { an in
-			Log.print(an)
-		}
 	}
 }
 

@@ -19,13 +19,15 @@ final class TableViewCellInteractor {
 extension TableViewCellInteractor: PresenterToInteractorCellProtocol {
 	func addFavorite(model: TopModel) {
 		self.favoriteService.add(model)
+		ObserverService.post(notification: .addFavorite, object: model, userInfo: nil)
 	}
 	
 	func removeFavorite(model: TopModel) {
 		self.favoriteService.delete(model)
+		ObserverService.post(notification: .removeFavorite, object: model, userInfo: nil)
 	}
 	
 	func existFavorite(model: TopModel) -> Bool {
-		self.favoriteService.contains(model)
+		return self.favoriteService.contains(model)
 	}
 }

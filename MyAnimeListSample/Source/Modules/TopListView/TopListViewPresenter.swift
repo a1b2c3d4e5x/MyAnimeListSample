@@ -55,9 +55,11 @@ extension TopListViewPresenter: ViewToPresenterTopListProtocol {
 	}
 	
 	func tapFavorite() {
+		self.router.showFavoriteListView()
 	}
 	
 	func tapSearch() {
+		self.router.showSelectView()
 	}
 	
 	func reloadDataSource() {
@@ -101,7 +103,12 @@ extension TopListViewPresenter: ViewToPresenterTopListProtocol {
 	}
 }
 
-extension TopListViewPresenter: InteractorToPresenterTopListProtocol { }
+extension TopListViewPresenter: InteractorToPresenterTopListProtocol {
+	func modelDidChange(model: TopModel) {
+		guard let index = self.models?.firstIndex(of: model) else { return }
+		self.view?.reloadData(at: index)
+	}
+}
 
 extension TopListViewPresenter {
 	private func fetchList(page: Int, reset: Bool, completion: @escaping (Bool) -> Void) {

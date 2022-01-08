@@ -7,6 +7,8 @@
 
 import Foundation
 
-final class InAppWebViewInteractor { }
+final class InAppWebViewInteractor {
+	weak var presenter: InteractorToPresenterWebViewProtocol? = nil
+}
 
 extension InAppWebViewInteractor: PresenterToInteractorWebViewProtocol { }
