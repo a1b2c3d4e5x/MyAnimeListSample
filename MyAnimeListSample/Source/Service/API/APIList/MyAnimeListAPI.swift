@@ -9,13 +9,6 @@ enum TopListType {
 	case anime(subtype: AnimeSubtype)
 	case manga(subtype: MangaSubtype)
 	
-	var rawValue: String {
-		switch self {
-		case .manga(_): return "manga"
-		case .anime(_): return "anime"
-		}
-	}
-	
 	enum AnimeSubtype: String, CaseIterable {
 		case airing
 		case upcoming
@@ -37,6 +30,13 @@ enum TopListType {
 		case bypopularity
 		case favorite
 	}
+	
+	var rawValue: String {
+		switch self {
+		case .manga(_): return "manga"
+		case .anime(_): return "anime"
+		}
+	}	
 }
 
 protocol MyAnimeListAPIProtocol {

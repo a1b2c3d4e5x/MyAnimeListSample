@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-class SelectViewController: UIViewController {
+final class SelectViewController: UIViewController {
+	var presenter: ViewToPresenterSelectViewProtocol? = nil
+	
 	@IBOutlet weak var firstPullDownButton: UIButton!
 	@IBOutlet weak var secondPullBownButton: UIButton!
 	@IBOutlet weak var typeLabel: UILabel!
@@ -16,61 +18,48 @@ class SelectViewController: UIViewController {
 	@IBOutlet weak var goButton: UIButton!
 	
 	override func viewDidLoad() {
-		self.goButton.isEnabled = false
-		self.secondPullBownButton.isEnabled = false
-		
-		let anime = UIAction(title: "anime") { [weak self] _ in
-			self?.firstPullDownButton.setTitle("anime", for: .normal)
-			self?.secondPullBownButton.setTitle("Option".localized, for: .normal)
-			self?.secondPullBownButton.isEnabled = true
-			self?.goButton.isEnabled = false
-			let items = TopListType.AnimeSubtype.allCases.map { subtype in
-				return UIAction(title: subtype.rawValue) { [weak self] action in
-					self?.secondPullBownButton.setTitle(action.title, for: .normal)
-					self?.goButton.isEnabled = true
-				}
-			}
-			self?.secondPullBownButton.menu = UIMenu(title: "Subtype", children: items)
-			self?.secondPullBownButton.showsMenuAsPrimaryAction = true
-		}
-		
-		let manga = UIAction(title: "manga") { [weak self] _ in
-			self?.firstPullDownButton.setTitle("manga", for: .normal)
-			self?.secondPullBownButton.setTitle("Option".localized, for: .normal)
-			self?.secondPullBownButton.isEnabled = true
-			self?.goButton.isEnabled = false
-			let items = TopListType.MangaSubtype.allCases.map { subtype in
-				return UIAction(title: subtype.rawValue) { [weak self] action in
-					self?.secondPullBownButton.setTitle(action.title, for: .normal)
-					self?.goButton.isEnabled = true
-				}
-			}
-			self?.secondPullBownButton.menu = UIMenu(title: "Subtype", children: items)
-			self?.secondPullBownButton.showsMenuAsPrimaryAction = true
-		}
-		
-		
-		let menu = UIMenu(title: "Type", children: [anime, manga])
-		self.firstPullDownButton.menu = menu
-		self.firstPullDownButton.showsMenuAsPrimaryAction = true
+		super.viewDidLoad()
+		self.presenter?.viewDidLoad()
 	}
 	
 	@IBAction func tapGo(_ sender: UIButton) {
 		guard let typeTitle = self.firstPullDownButton.currentTitle else { return }
 		guard let subtypeTitle = self.secondPullBownButton.currentTitle else { return }
+		
+		self.presenter?.tapGo(with: typeTitle, with: subtypeTitle)
+	}
+}
 
-		if let type: TopListType? = {
-			switch typeTitle {
-			case "anime":
-				return TopListType.anime(subtype: TopListType.AnimeSubtype(rawValue: subtypeTitle)!)
-			case "manga":
-				return TopListType.manga(subtype: TopListType.MangaSubtype(rawValue: subtypeTitle)!)
-			default:
-				return nil
-			}
-		}() {
-			ObserverService.post(notification: .topTypeChanged, object: type, userInfo: nil)
-			self.dismiss(animated: true, completion: nil)
-		}
+extension SelectViewController: Viewable { }
+
+extension SelectViewController: PresenterToViewSelectViewProtocol {
+	func setTypeButton(enable: Bool) {
+		self.firstPullDownButton.isEnabled = enable
+	}
+	
+	func setTypeButton(text: String) {
+		self.firstPullDownButton.setTitle(text, for: .normal)
+	}
+	
+	func setTypeButton(actions: [UIAction]) {
+		self.firstPullDownButton.menu = UIMenu(title: "Subtype", children: actions)
+		self.firstPullDownButton.showsMenuAsPrimaryAction = true
+	}
+	
+	func setSubTypeButton(enable: Bool) {
+		self.secondPullBownButton.isEnabled = enable
+	}
+	
+	func setSubTypeButton(text: String) {
+		self.secondPullBownButton.setTitle(text, for: .normal)
+	}
+	
+	func setSubTypeButton(actions: [UIAction]) {
+		self.secondPullBownButton.menu = UIMenu(title: "Subtype", children: actions)
+		self.secondPullBownButton.showsMenuAsPrimaryAction = true
+	}
+	
+	func setGoButton(enable: Bool) {
+		self.goButton.isEnabled = enable
 	}
 }

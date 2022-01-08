@@ -32,9 +32,8 @@ extension TopListViewRouter: PresenterToRouterTopListProtocol {
 	}
 	
 	func showSelectView() {
-		let viewController: SelectViewController = SelectViewController.storyboard()
+		let viewController: SelectViewController = SelectViewRouter.createModule()
 		let navigationController = UINavigationController(rootViewController: viewController)
-		
 		navigationController.modalPresentationStyle = .pageSheet
 		if let sheet = navigationController.sheetPresentationController {
 			sheet.detents = [.medium()]
