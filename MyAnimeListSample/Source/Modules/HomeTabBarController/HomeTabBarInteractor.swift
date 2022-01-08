@@ -7,7 +7,6 @@
 
 import Foundation
 
-final class HomeTabBarInteractor {
-}
+final class HomeTabBarInteractor { }
 
 extension HomeTabBarInteractor: PresenterToInteractorHomeTabProtocol { }

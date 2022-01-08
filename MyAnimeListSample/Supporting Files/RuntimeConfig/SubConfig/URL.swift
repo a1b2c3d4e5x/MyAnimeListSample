@@ -5,12 +5,9 @@
 //  Created by GUO-HAO CHEN on 2022/1/4.
 //
 
-protocol CONFIG_URL {
-	var API_DOMAIN: String { get }
+final class CONFIG_URL {
+	static var shared: CONFIG_URL = CONFIG_URL()
+	
+	var DOMAIN_JIKAN: String = "https://api.jikan.moe"
 }
 
-extension CONFIG_URL {
-	var API_DOMAIN: String {
-		return "https://api.jikan.moe"
-	}
-}
