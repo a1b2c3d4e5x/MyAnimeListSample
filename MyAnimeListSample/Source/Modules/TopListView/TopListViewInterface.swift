@@ -13,6 +13,9 @@ protocol WireframeTopListProtocol: AnyObject {
 
 protocol PresenterToRouterTopListProtocol: AnyObject {
 	func showDetailView(for model: TopModel)
+	
+	func showFavoriteListView()
+	func showSelectView()
 }
 
 protocol PresenterToInteractorTopListProtocol: AnyObject {
@@ -21,6 +24,7 @@ protocol PresenterToInteractorTopListProtocol: AnyObject {
 
 protocol PresenterToViewTopListProtocol: AnyObject {
 	func reloadData()
+	func reloadData(at index: Int)
 	func appendData(lastCount: Int)
 	
 	func showEmptyView()
@@ -30,6 +34,7 @@ protocol PresenterToViewTopListProtocol: AnyObject {
 }
 
 protocol InteractorToPresenterTopListProtocol: AnyObject {
+	func modelDidChange(model: TopModel)
 }
 
 protocol ViewToPresenterTopListProtocol: AnyObject {

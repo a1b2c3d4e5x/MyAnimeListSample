@@ -33,6 +33,13 @@
 		3FA810E627859E1600C3BFB6 /* TopListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810E527859E1600C3BFB6 /* TopListViewRouter.swift */; };
 		3FA810E827859E1F00C3BFB6 /* TopListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810E727859E1F00C3BFB6 /* TopListViewInterface.swift */; };
 		3FA810F12785AD0000C3BFB6 /* ExtraTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810F02785AD0000C3BFB6 /* ExtraTableView.swift */; };
+		3FCF77902789DC39005C0AEE /* FavoriteListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778A2789DC39005C0AEE /* FavoriteListViewInterface.swift */; };
+		3FCF77912789DC39005C0AEE /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778B2789DC39005C0AEE /* FavoriteListViewController.swift */; };
+		3FCF77922789DC39005C0AEE /* FavoriteListViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778C2789DC39005C0AEE /* FavoriteListViewInteractor.swift */; };
+		3FCF77932789DC39005C0AEE /* FavoriteListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778D2789DC39005C0AEE /* FavoriteListViewPresenter.swift */; };
+		3FCF77942789DC39005C0AEE /* FavoriteListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778E2789DC39005C0AEE /* FavoriteListViewRouter.swift */; };
+		3FCF77952789DC39005C0AEE /* FavoriteListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF778F2789DC39005C0AEE /* FavoriteListViewController.storyboard */; };
+		3FCF77982789EBB9005C0AEE /* ObserverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF77972789EBB9005C0AEE /* ObserverService.swift */; };
 		3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865252782E49C005A13A6 /* AppDelegate.swift */; };
 		3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865272782E49C005A13A6 /* SceneDelegate.swift */; };
 		3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8652E2782E49E005A13A6 /* Assets.xcassets */; };
@@ -127,6 +134,13 @@
 		3FA810E527859E1600C3BFB6 /* TopListViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewRouter.swift; sourceTree = "<group>"; };
 		3FA810E727859E1F00C3BFB6 /* TopListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewInterface.swift; sourceTree = "<group>"; };
 		3FA810F02785AD0000C3BFB6 /* ExtraTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraTableView.swift; sourceTree = "<group>"; };
+		3FCF778A2789DC39005C0AEE /* FavoriteListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewInterface.swift; sourceTree = "<group>"; };
+		3FCF778B2789DC39005C0AEE /* FavoriteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
+		3FCF778C2789DC39005C0AEE /* FavoriteListViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewInteractor.swift; sourceTree = "<group>"; };
+		3FCF778D2789DC39005C0AEE /* FavoriteListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewPresenter.swift; sourceTree = "<group>"; };
+		3FCF778E2789DC39005C0AEE /* FavoriteListViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewRouter.swift; sourceTree = "<group>"; };
+		3FCF778F2789DC39005C0AEE /* FavoriteListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteListViewController.storyboard; sourceTree = "<group>"; };
+		3FCF77972789EBB9005C0AEE /* ObserverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverService.swift; sourceTree = "<group>"; };
 		3FD865222782E49C005A13A6 /* MyAnimeListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnimeListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD865252782E49C005A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD865272782E49C005A13A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -369,6 +383,27 @@
 			path = ExtraTableView;
 			sourceTree = "<group>";
 		};
+		3FCF77852789D8DB005C0AEE /* FavoriteListView */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF778F2789DC39005C0AEE /* FavoriteListViewController.storyboard */,
+				3FCF778B2789DC39005C0AEE /* FavoriteListViewController.swift */,
+				3FCF778D2789DC39005C0AEE /* FavoriteListViewPresenter.swift */,
+				3FCF778C2789DC39005C0AEE /* FavoriteListViewInteractor.swift */,
+				3FCF778E2789DC39005C0AEE /* FavoriteListViewRouter.swift */,
+				3FCF778A2789DC39005C0AEE /* FavoriteListViewInterface.swift */,
+			);
+			path = FavoriteListView;
+			sourceTree = "<group>";
+		};
+		3FCF77962789EB91005C0AEE /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF77972789EBB9005C0AEE /* ObserverService.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		3FD865192782E49C005A13A6 = {
 			isa = PBXGroup;
 			children = (
@@ -453,11 +488,11 @@
 		3FD865582782EB79005A13A6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3FFA36962789746000E0B288 /* InAppWebView */,
-				3FEE579F2788933900FC713E /* FavoriteButton */,
-				3FEE57782787FACF00FC713E /* TableViewCell */,
-				3FA810E92785A11A00C3BFB6 /* SelectView */,
 				3FA810DC27859D7600C3BFB6 /* TopListView */,
+				3FCF77852789D8DB005C0AEE /* FavoriteListView */,
+				3FA810E92785A11A00C3BFB6 /* SelectView */,
+				3FFA36962789746000E0B288 /* InAppWebView */,
+				3FEE57782787FACF00FC713E /* TableViewCell */,
 				3FA810C02785514000C3BFB6 /* HomeTabBarController */,
 			);
 			path = Modules;
@@ -475,9 +510,10 @@
 		3FD8655A2782EB95005A13A6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3FFA36A72789C97E00E0B288 /* Favorite */,
 				3FEE578D2788371100FC713E /* API */,
+				3FFA36A72789C97E00E0B288 /* Favorite */,
 				3FEE578C2788370500FC713E /* Network */,
+				3FCF77962789EB91005C0AEE /* Observer */,
 				3FFA36A12789C60400E0B288 /* UserDefaults */,
 			);
 			path = Service;
@@ -575,13 +611,6 @@
 				3FEE579B2788466C00FC713E /* String+ToModel.swift */,
 			);
 			path = String;
-			sourceTree = "<group>";
-		};
-		3FEE579F2788933900FC713E /* FavoriteButton */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FavoriteButton;
 			sourceTree = "<group>";
 		};
 		3FEE57A0278893CC00FC713E /* Cells */ = {
@@ -767,6 +796,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA810E027859DF000C3BFB6 /* TopListViewController.storyboard in Resources */,
+				3FCF77952789DC39005C0AEE /* FavoriteListViewController.storyboard in Resources */,
 				3FEE57AA2788BD4500FC713E /* NoPicture.dark.pdf in Resources */,
 				3FD865322782E49E005A13A6 /* LaunchScreen.storyboard in Resources */,
 				3FEE57A92788BD4500FC713E /* NoPicture.light.pdf in Resources */,
@@ -812,11 +842,15 @@
 				3FA810B727854E2700C3BFB6 /* UILabel+XIBLocalizable.swift in Sources */,
 				3FEE57902788374500FC713E /* MyAnimeListAPI.swift in Sources */,
 				3FFA36A0278974F200E0B288 /* InAppWebViewInterface.swift in Sources */,
+				3FCF77982789EBB9005C0AEE /* ObserverService.swift in Sources */,
 				3FEE579E278852CA00FC713E /* ClientService.swift in Sources */,
+				3FCF77922789DC39005C0AEE /* FavoriteListViewInteractor.swift in Sources */,
 				3FFA36A92789C9A100E0B288 /* FavoriteService.swift in Sources */,
 				3FFA369027894EF600E0B288 /* UIImageView+Download.swift in Sources */,
 				3FFA36952789724B00E0B288 /* UIViewController+Viewable.swift in Sources */,
 				3FA810D22785888900C3BFB6 /* HomeTabBarInterface.swift in Sources */,
+				3FCF77932789DC39005C0AEE /* FavoriteListViewPresenter.swift in Sources */,
+				3FCF77902789DC39005C0AEE /* FavoriteListViewInterface.swift in Sources */,
 				3FEE5787278823BE00FC713E /* UITableView+Register.swift in Sources */,
 				3FEE57942788393900FC713E /* GHResponse.swift in Sources */,
 				3FEE579C2788466C00FC713E /* String+ToModel.swift in Sources */,
@@ -831,6 +865,7 @@
 				3FA810DB278598FE00C3BFB6 /* UIViewController+Storyboard.swift in Sources */,
 				3FEE57842787FB9B00FC713E /* TableViewCellInterface.swift in Sources */,
 				3FEE57982788396E00FC713E /* APIService.swift in Sources */,
+				3FCF77942789DC39005C0AEE /* FavoriteListViewRouter.swift in Sources */,
 				3FA810D02785888900C3BFB6 /* HomeTabBarController.swift in Sources */,
 				3FA810D12785888900C3BFB6 /* HomeTabBarPresenter.swift in Sources */,
 				3FA810E427859E0D00C3BFB6 /* TopListViewInteractor.swift in Sources */,
@@ -842,6 +877,7 @@
 				3FEE5789278825D900FC713E /* TopModel.swift in Sources */,
 				3FA810D627858EB300C3BFB6 /* HomeTabBarInteractor.swift in Sources */,
 				3FEE57802787FB7D00FC713E /* TableViewCellInteractor.swift in Sources */,
+				3FCF77912789DC39005C0AEE /* FavoriteListViewController.swift in Sources */,
 				3FA810942784042F00C3BFB6 /* Config.swift in Sources */,
 				3FEE57822787FB8A00FC713E /* TableViewCellRouter.swift in Sources */,
 				3FFA369A278974CD00E0B288 /* InAppWebViewPresenter.swift in Sources */,

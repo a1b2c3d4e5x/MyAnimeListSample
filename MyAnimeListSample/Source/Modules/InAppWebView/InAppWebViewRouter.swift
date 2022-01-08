@@ -28,6 +28,8 @@ extension InAppWebViewRouter {
 		let interator = InAppWebViewInteractor()
 		let router = InAppWebViewRouter()
 		let presenter = InAppWebViewPresenter(view: view, interactor: interator, router: router, url: url)
+		interator.presenter = presenter
+		
 		return presenter
 	}
 }

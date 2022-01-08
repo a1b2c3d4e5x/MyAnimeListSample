@@ -22,6 +22,7 @@ extension TableViewCellRouter: WireframeCellProtocol {
 		let interator = TableViewCellInteractor(favoriteService: FavoriteService.shared)
 		let router = TableViewCellRouter()
 		let presenter = TableViewCellPresenter(view: view, router: router, interactor: interator)
+		interator.presenter = presenter
 		
 		return presenter
 	}

@@ -42,6 +42,12 @@ final class TopListViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		self._initialize()
+		self.presenter?.viewDidLoad()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.presenter?.viewWillAppear()
 	}
 	
 	@IBAction func tapFavorite(_ sender: UIBarButtonItem) {
@@ -56,6 +62,11 @@ final class TopListViewController: UIViewController {
 extension TopListViewController: PresenterToViewTopListProtocol {
 	func reloadData() {
 		self.tableView.reloadData()
+	}
+	
+	func reloadData(at index: Int) {
+		let indexPath = IndexPath(item: index, section: 0)
+		self.tableView.reloadRows(at: [indexPath], with: .none)
 	}
 	
 	func appendData(lastCount: Int) {
@@ -133,12 +144,10 @@ extension TopListViewController {
 	private func _initialize() {
 		self.tableView.extraDataSource = self
 		self.tableView.extraDelegate = self
-		self.tableView.estimatedRowHeight = 150
-		self.tableView.rowHeight = UITableView.automaticDimension
+		self.tableView.estimatedRowHeight = 180
+		self.tableView.rowHeight = 180
 		
 		self.tableView.register(cellNib: TableViewSmallCell.self)
-		
-		self.presenter?.viewDidLoad()
 	}
 }
 

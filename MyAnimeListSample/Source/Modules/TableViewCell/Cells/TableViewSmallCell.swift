@@ -25,6 +25,8 @@ final class TableViewSmallCell: UITableViewCell {
 	}
 	
 	@IBAction func tapFavoriteButton(_ sender: UIButton) {
+		let generator = UIImpactFeedbackGenerator(style: .light)
+		generator.impactOccurred()
 		self.presenter?.tapFavorite(to: !sender.isSelected)
 	}
 }
