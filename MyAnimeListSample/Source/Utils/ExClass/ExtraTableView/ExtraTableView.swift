@@ -107,7 +107,7 @@ extension ExtraTableView: UIScrollViewDelegate {
 
 extension ExtraTableView {
 	public func reloadExtraView() {
-		let indexPath: IndexPath = IndexPath(row: 0, section: 1)
-		self.reloadRows(at: [indexPath], with: .none)
+		let indexSet: IndexSet = IndexSet(integer: 1)
+		self.reloadSections(indexSet, with: .none)
 	}
 }

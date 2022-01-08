@@ -13,11 +13,13 @@ final class TopListViewInteractor {
 	init() {
 		ObserverService.add(observer: self, selector: #selector(self.addFavorite(_:)), notification: .addFavorite, object: nil)
 		ObserverService.add(observer: self, selector: #selector(self.removeFavorite(_:)), notification: .removeFavorite, object: nil)
+		ObserverService.add(observer: self, selector: #selector(self.topTypeChanged(_:)), notification: .topTypeChanged, object: nil)
 	}
 	
 	deinit {
 		ObserverService.remove(observer: self, notification: .addFavorite, object: nil)
 		ObserverService.remove(observer: self, notification: .removeFavorite, object: nil)
+		ObserverService.remove(observer: self, notification: .topTypeChanged, object: nil)
 	}
 }
 
@@ -40,5 +42,10 @@ extension TopListViewInteractor {
 	@objc private func removeFavorite(_ notification: Notification) {
 		guard let model = notification.object as? TopModel else { return }
 		self.presenter?.modelDidChange(model: model)
+	}
+	
+	@objc private func topTypeChanged(_ notification: Notification) {
+		guard let type = notification.object as? TopListType else { return }
+		self.presenter?.typeDidChang(type: type)
 	}
 }

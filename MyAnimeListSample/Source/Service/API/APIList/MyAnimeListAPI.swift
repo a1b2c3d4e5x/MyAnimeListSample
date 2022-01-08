@@ -16,7 +16,7 @@ enum TopListType {
 		}
 	}
 	
-	enum AnimeSubtype: String {
+	enum AnimeSubtype: String, CaseIterable {
 		case airing
 		case upcoming
 		case tv
@@ -27,7 +27,7 @@ enum TopListType {
 		case favorite
 	}
 	
-	enum MangaSubtype: String {
+	enum MangaSubtype: String, CaseIterable {
 		case manga
 		case novels
 		case oneshots

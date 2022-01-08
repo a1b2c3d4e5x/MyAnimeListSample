@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectViewController" id="Y6W-OH-hqX" customClass="SelectViewController" customModule="MyAnimeListSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="x4o-8X-Ob1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rgY-en-keN">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-g6-FZ1">
+                                    <rect key="frame" x="41.5" y="60" width="331" height="31"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrU-2O-bnO">
+                                            <rect key="frame" x="132.5" y="0.0" width="198.5" height="31"/>
+                                            <menu key="menu" id="JaZ-Tp-Anh">
+                                                <children>
+                                                    <command title="Item 1" id="Qxz-cj-Eru"/>
+                                                    <command title="Item 2" id="ZnQ-tb-prm"/>
+                                                </children>
+                                            </menu>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Option"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svz-TE-gbj">
+                                            <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KrU-2O-bnO" firstAttribute="top" secondItem="Gdc-g6-FZ1" secondAttribute="top" id="6ak-t6-hMM"/>
+                                        <constraint firstItem="svz-TE-gbj" firstAttribute="leading" secondItem="Gdc-g6-FZ1" secondAttribute="leading" id="7vC-5n-BzP"/>
+                                        <constraint firstAttribute="trailing" secondItem="KrU-2O-bnO" secondAttribute="trailing" id="Wtp-sl-Yeu"/>
+                                        <constraint firstItem="svz-TE-gbj" firstAttribute="top" secondItem="Gdc-g6-FZ1" secondAttribute="top" id="dQp-9m-PHC"/>
+                                        <constraint firstItem="KrU-2O-bnO" firstAttribute="centerY" secondItem="svz-TE-gbj" secondAttribute="centerY" id="ibL-wm-sMM"/>
+                                        <constraint firstAttribute="bottom" secondItem="svz-TE-gbj" secondAttribute="bottom" id="maf-tU-0xO"/>
+                                        <constraint firstItem="KrU-2O-bnO" firstAttribute="width" secondItem="Gdc-g6-FZ1" secondAttribute="width" multiplier="0.6" id="msq-oS-yAO"/>
+                                        <constraint firstAttribute="bottom" secondItem="KrU-2O-bnO" secondAttribute="bottom" id="ztX-Ux-V5n"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8I1-Pj-wHy">
+                                    <rect key="frame" x="41.5" y="131" width="331" height="31"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMi-X5-Hos">
+                                            <rect key="frame" x="132.5" y="0.0" width="198.5" height="31"/>
+                                            <menu key="menu" id="L3F-Ex-hLR">
+                                                <children>
+                                                    <command title="Item 1" id="irn-Ac-sbm"/>
+                                                    <command title="Item 2" id="lxh-CJ-B4b"/>
+                                                </children>
+                                            </menu>
+                                            <buttonConfiguration key="configuration" style="tinted" title="Option"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtype" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-HT-58t">
+                                            <rect key="frame" x="0.0" y="0.0" width="90.5" height="31"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="KMi-X5-Hos" secondAttribute="trailing" id="0wv-39-uWi"/>
+                                        <constraint firstItem="KMi-X5-Hos" firstAttribute="centerY" secondItem="wpe-HT-58t" secondAttribute="centerY" id="4HZ-h9-uJg"/>
+                                        <constraint firstAttribute="bottom" secondItem="KMi-X5-Hos" secondAttribute="bottom" id="5uF-FY-Hsv"/>
+                                        <constraint firstItem="wpe-HT-58t" firstAttribute="top" secondItem="8I1-Pj-wHy" secondAttribute="top" id="A1q-7I-gmc"/>
+                                        <constraint firstAttribute="bottom" secondItem="wpe-HT-58t" secondAttribute="bottom" id="JY9-Ab-Tcl"/>
+                                        <constraint firstItem="KMi-X5-Hos" firstAttribute="width" secondItem="8I1-Pj-wHy" secondAttribute="width" multiplier="0.6" id="bCD-9a-rTe"/>
+                                        <constraint firstItem="KMi-X5-Hos" firstAttribute="top" secondItem="8I1-Pj-wHy" secondAttribute="top" id="f1w-B9-VLZ"/>
+                                        <constraint firstItem="wpe-HT-58t" firstAttribute="leading" secondItem="8I1-Pj-wHy" secondAttribute="leading" id="hxW-N7-1Ec"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrE-nc-hCz">
+                                    <rect key="frame" x="124" y="212" width="166" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Go!!"/>
+                                    <connections>
+                                        <action selector="tapGo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="260-pe-XoZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Gdc-g6-FZ1" firstAttribute="width" secondItem="rgY-en-keN" secondAttribute="width" multiplier="0.8" id="9gT-tb-B45"/>
+                                <constraint firstItem="KrE-nc-hCz" firstAttribute="width" secondItem="rgY-en-keN" secondAttribute="width" multiplier="0.4" id="Dd1-na-gTL"/>
+                                <constraint firstItem="KrE-nc-hCz" firstAttribute="top" secondItem="8I1-Pj-wHy" secondAttribute="bottom" constant="50" id="FOR-ag-Lfb"/>
+                                <constraint firstItem="8I1-Pj-wHy" firstAttribute="centerX" secondItem="rgY-en-keN" secondAttribute="centerX" id="cGE-Lf-nBV"/>
+                                <constraint firstItem="8I1-Pj-wHy" firstAttribute="top" secondItem="Gdc-g6-FZ1" secondAttribute="bottom" constant="40" id="dPD-ON-6JA"/>
+                                <constraint firstItem="KrE-nc-hCz" firstAttribute="centerX" secondItem="rgY-en-keN" secondAttribute="centerX" id="esI-aO-VzW"/>
+                                <constraint firstItem="8I1-Pj-wHy" firstAttribute="width" secondItem="rgY-en-keN" secondAttribute="width" multiplier="0.8" id="gbT-jh-GuK"/>
+                                <constraint firstItem="Gdc-g6-FZ1" firstAttribute="top" secondItem="rgY-en-keN" secondAttribute="top" constant="60" id="xWI-Vl-eic"/>
+                                <constraint firstItem="Gdc-g6-FZ1" firstAttribute="centerX" secondItem="rgY-en-keN" secondAttribute="centerX" id="yL9-2D-LjW"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="prominent"/>
+                    </visualEffectView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Selection View"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="firstPullDownButton" destination="KrU-2O-bnO" id="6ve-xX-bka"/>
+                        <outlet property="goButton" destination="KrE-nc-hCz" id="EN1-co-30E"/>
+                        <outlet property="secondPullBownButton" destination="KMi-X5-Hos" id="LL7-ON-Tvc"/>
+                        <outlet property="subtypeLabel" destination="wpe-HT-58t" id="2gD-9A-Sxl"/>
+                        <outlet property="typeLabel" destination="svz-TE-gbj" id="mph-C0-yVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+</document>
