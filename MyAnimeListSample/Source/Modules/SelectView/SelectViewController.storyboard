@@ -30,6 +30,9 @@
                                                 </children>
                                             </menu>
                                             <buttonConfiguration key="configuration" style="tinted" title="Option"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Option"/>
+                                            </userDefinedRuntimeAttributes>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svz-TE-gbj">
                                             <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
@@ -61,6 +64,9 @@
                                                 </children>
                                             </menu>
                                             <buttonConfiguration key="configuration" style="tinted" title="Option"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Option"/>
+                                            </userDefinedRuntimeAttributes>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtype" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-HT-58t">
                                             <rect key="frame" x="0.0" y="0.0" width="90.5" height="31"/>

@@ -5,16 +5,9 @@
 //  Created by GUO-HAO CHEN on 2022/1/7.
 //
 
-enum TopListType {
+enum TopListType: Equatable {
 	case anime(subtype: AnimeSubtype)
 	case manga(subtype: MangaSubtype)
-	
-	var rawValue: String {
-		switch self {
-		case .manga(_): return "manga"
-		case .anime(_): return "anime"
-		}
-	}
 	
 	enum AnimeSubtype: String, CaseIterable {
 		case airing
@@ -37,6 +30,13 @@ enum TopListType {
 		case bypopularity
 		case favorite
 	}
+	
+	var rawValue: String {
+		switch self {
+		case .manga(_): return "manga"
+		case .anime(_): return "anime"
+		}
+	}	
 }
 
 protocol MyAnimeListAPIProtocol {

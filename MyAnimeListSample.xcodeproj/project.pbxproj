@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F083049278A139E00B3F82E /* TopListViewInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F083048278A139E00B3F82E /* TopListViewInteractorTests.swift */; };
+		3F08304B278A169100B3F82E /* SelectViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08304A278A169100B3F82E /* SelectViewPresenter.swift */; };
+		3F08304D278A169E00B3F82E /* SelectViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08304C278A169E00B3F82E /* SelectViewInteractor.swift */; };
+		3F08304F278A16A700B3F82E /* SelectViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08304E278A16A700B3F82E /* SelectViewRouter.swift */; };
+		3F083051278A16B400B3F82E /* SelectViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F083050278A16B400B3F82E /* SelectViewInterface.swift */; };
+		3F083054278A2A5F00B3F82E /* MockJson.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F083053278A2A5F00B3F82E /* MockJson.bundle */; };
 		3FA810942784042F00C3BFB6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810932784042F00C3BFB6 /* Config.swift */; };
 		3FA81097278405AB00C3BFB6 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA81096278405AB00C3BFB6 /* URL.swift */; };
 		3FA8109F278440DB00C3BFB6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810A1278440DB00C3BFB6 /* Localizable.strings */; };
@@ -19,12 +25,6 @@
 		3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */; };
 		3FA810BC27854F0600C3BFB6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BB27854F0600C3BFB6 /* String+Localized.swift */; };
 		3FA810BF2785501F00C3BFB6 /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810BE2785501F00C3BFB6 /* GHError.swift */; };
-		3FA810D02785888900C3BFB6 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */; };
-		3FA810D12785888900C3BFB6 /* HomeTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */; };
-		3FA810D22785888900C3BFB6 /* HomeTabBarInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */; };
-		3FA810D32785888900C3BFB6 /* HomeTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */; };
-		3FA810D627858EB300C3BFB6 /* HomeTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */; };
-		3FA810D8278590B400C3BFB6 /* HomeTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */; };
 		3FA810DB278598FE00C3BFB6 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810DA278598FE00C3BFB6 /* UIViewController+Storyboard.swift */; };
 		3FA810DE27859DE400C3BFB6 /* TopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810DD27859DE400C3BFB6 /* TopListViewController.swift */; };
 		3FA810E027859DF000C3BFB6 /* TopListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810DF27859DF000C3BFB6 /* TopListViewController.storyboard */; };
@@ -46,7 +46,6 @@
 		3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865272782E49C005A13A6 /* SceneDelegate.swift */; };
 		3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8652E2782E49E005A13A6 /* Assets.xcassets */; };
 		3FD865322782E49E005A13A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD865302782E49E005A13A6 /* LaunchScreen.storyboard */; };
-		3FD8653D2782E49E005A13A6 /* MyAnimeListSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8653C2782E49E005A13A6 /* MyAnimeListSampleTests.swift */; };
 		3FD865472782E49E005A13A6 /* MyAnimeListSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865462782E49E005A13A6 /* MyAnimeListSampleUITests.swift */; };
 		3FD865492782E49E005A13A6 /* MyAnimeListSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865482782E49E005A13A6 /* MyAnimeListSampleUITestsLaunchTests.swift */; };
 		3FEE576C2786DFA600FC713E /* UIView+ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEE576B2786DFA600FC713E /* UIView+ActivityIndicatorView.swift */; };
@@ -103,6 +102,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F083048278A139E00B3F82E /* TopListViewInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewInteractorTests.swift; sourceTree = "<group>"; };
+		3F08304A278A169100B3F82E /* SelectViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewPresenter.swift; sourceTree = "<group>"; };
+		3F08304C278A169E00B3F82E /* SelectViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewInteractor.swift; sourceTree = "<group>"; };
+		3F08304E278A16A700B3F82E /* SelectViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewRouter.swift; sourceTree = "<group>"; };
+		3F083050278A16B400B3F82E /* SelectViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewInterface.swift; sourceTree = "<group>"; };
+		3F083053278A2A5F00B3F82E /* MockJson.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MockJson.bundle; sourceTree = "<group>"; };
 		3FA8108F2784025D00C3BFB6 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		3FA810902784027300C3BFB6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		3FA810912784027C00C3BFB6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -122,12 +127,6 @@
 		3FA810B827854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+XIBLocalizable.swift"; sourceTree = "<group>"; };
 		3FA810BB27854F0600C3BFB6 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		3FA810BE2785501F00C3BFB6 /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
-		3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
-		3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarPresenter.swift; sourceTree = "<group>"; };
-		3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarInterface.swift; sourceTree = "<group>"; };
-		3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarRouter.swift; sourceTree = "<group>"; };
-		3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarInteractor.swift; sourceTree = "<group>"; };
-		3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBarController.storyboard; sourceTree = "<group>"; };
 		3FA810DA278598FE00C3BFB6 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		3FA810DD27859DE400C3BFB6 /* TopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewController.swift; sourceTree = "<group>"; };
 		3FA810DF27859DF000C3BFB6 /* TopListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopListViewController.storyboard; sourceTree = "<group>"; };
@@ -151,7 +150,6 @@
 		3FD8652E2782E49E005A13A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD865332782E49E005A13A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD865382782E49E005A13A6 /* MyAnimeListSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAnimeListSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FD8653C2782E49E005A13A6 /* MyAnimeListSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimeListSampleTests.swift; sourceTree = "<group>"; };
 		3FD865422782E49E005A13A6 /* MyAnimeListSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAnimeListSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD865462782E49E005A13A6 /* MyAnimeListSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimeListSampleUITests.swift; sourceTree = "<group>"; };
 		3FD865482782E49E005A13A6 /* MyAnimeListSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimeListSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -216,6 +214,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F083047278A133700B3F82E /* TopListView */ = {
+			isa = PBXGroup;
+			children = (
+				3F083048278A139E00B3F82E /* TopListViewInteractorTests.swift */,
+			);
+			path = TopListView;
+			sourceTree = "<group>";
+		};
+		3F083052278A2A3300B3F82E /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				3F083053278A2A5F00B3F82E /* MockJson.bundle */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
 		3FA8108E278401B000C3BFB6 /* CompileConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,13 +278,6 @@
 			path = ExClass;
 			sourceTree = "<group>";
 		};
-		3FA810A8278443D700C3BFB6 /* ExFunction */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ExFunction;
-			sourceTree = "<group>";
-		};
 		3FA810A9278443EB00C3BFB6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,13 +290,6 @@
 				3FFA36A42789C87A00E0B288 /* UserDefaults */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		3FA810AA278443F300C3BFB6 /* Exception */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Exception;
 			sourceTree = "<group>";
 		};
 		3FA810AB2784440700C3BFB6 /* Enum */ = {
@@ -337,19 +337,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		3FA810C02785514000C3BFB6 /* HomeTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				3FA810D7278590B400C3BFB6 /* HomeTabBarController.storyboard */,
-				3FA810CB2785888900C3BFB6 /* HomeTabBarController.swift */,
-				3FA810CC2785888900C3BFB6 /* HomeTabBarPresenter.swift */,
-				3FA810D527858EB300C3BFB6 /* HomeTabBarInteractor.swift */,
-				3FA810CE2785888900C3BFB6 /* HomeTabBarRouter.swift */,
-				3FA810CD2785888900C3BFB6 /* HomeTabBarInterface.swift */,
-			);
-			path = HomeTabBarController;
-			sourceTree = "<group>";
-		};
 		3FA810D9278598E700C3BFB6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +364,10 @@
 			children = (
 				3FCF779B2789F697005C0AEE /* SelectViewController.storyboard */,
 				3FCF77992789F68B005C0AEE /* SelectViewController.swift */,
+				3F08304A278A169100B3F82E /* SelectViewPresenter.swift */,
+				3F08304C278A169E00B3F82E /* SelectViewInteractor.swift */,
+				3F08304E278A16A700B3F82E /* SelectViewRouter.swift */,
+				3F083050278A16B400B3F82E /* SelectViewInterface.swift */,
 			);
 			path = SelectView;
 			sourceTree = "<group>";
@@ -446,7 +437,7 @@
 		3FD8653B2782E49E005A13A6 /* MyAnimeListSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FD8653C2782E49E005A13A6 /* MyAnimeListSampleTests.swift */,
+				3F083047278A133700B3F82E /* TopListView */,
 			);
 			path = MyAnimeListSampleTests;
 			sourceTree = "<group>";
@@ -463,6 +454,7 @@
 		3FD865552782E970005A13A6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F083052278A2A3300B3F82E /* Bundle */,
 				3FEE57A52788BD4500FC713E /* Images */,
 				3FA810982784402500C3BFB6 /* Localizable */,
 				3FD8652E2782E49E005A13A6 /* Assets.xcassets */,
@@ -499,7 +491,6 @@
 				3FA810E92785A11A00C3BFB6 /* SelectView */,
 				3FFA36962789746000E0B288 /* InAppWebView */,
 				3FEE57782787FACF00FC713E /* TableViewCell */,
-				3FA810C02785514000C3BFB6 /* HomeTabBarController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -529,9 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				3FA810AB2784440700C3BFB6 /* Enum */,
-				3FA810AA278443F300C3BFB6 /* Exception */,
 				3FA810A9278443EB00C3BFB6 /* Extension */,
-				3FA810A8278443D700C3BFB6 /* ExFunction */,
 				3FA810A7278443CF00C3BFB6 /* ExClass */,
 			);
 			path = Utils;
@@ -808,10 +797,10 @@
 				3FEE57A92788BD4500FC713E /* NoPicture.light.pdf in Resources */,
 				3FCF779C2789F697005C0AEE /* SelectViewController.storyboard in Resources */,
 				3FEE577C2787FB5300FC713E /* TableViewSmallCell.xib in Resources */,
-				3FA810D8278590B400C3BFB6 /* HomeTabBarController.storyboard in Resources */,
 				3FA810A3278440E500C3BFB6 /* InfoPlist.strings in Resources */,
 				3FA8109F278440DB00C3BFB6 /* Localizable.strings in Resources */,
 				3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */,
+				3F083054278A2A5F00B3F82E /* MockJson.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,8 +828,10 @@
 				3FEE576E2786DFE300FC713E /* UIView+Embed.swift in Sources */,
 				3FA810DE27859DE400C3BFB6 /* TopListViewController.swift in Sources */,
 				3FFA368D27894C8A00E0B288 /* NETWORK.swift in Sources */,
+				3F08304D278A169E00B3F82E /* SelectViewInteractor.swift in Sources */,
 				3FEE57922788392400FC713E /* GHRequestData.swift in Sources */,
 				3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */,
+				3F08304B278A169100B3F82E /* SelectViewPresenter.swift in Sources */,
 				3FA810F12785AD0000C3BFB6 /* ExtraTableView.swift in Sources */,
 				3FA810B927854E7400C3BFB6 /* UIViewController+XIBLocalizable.swift in Sources */,
 				3FFA369E278974E500E0B288 /* InAppWebViewRouter.swift in Sources */,
@@ -855,7 +846,6 @@
 				3FFA36A92789C9A100E0B288 /* FavoriteService.swift in Sources */,
 				3FFA369027894EF600E0B288 /* UIImageView+Download.swift in Sources */,
 				3FFA36952789724B00E0B288 /* UIViewController+Viewable.swift in Sources */,
-				3FA810D22785888900C3BFB6 /* HomeTabBarInterface.swift in Sources */,
 				3FCF77932789DC39005C0AEE /* FavoriteListViewPresenter.swift in Sources */,
 				3FCF77902789DC39005C0AEE /* FavoriteListViewInterface.swift in Sources */,
 				3FEE5787278823BE00FC713E /* UITableView+Register.swift in Sources */,
@@ -864,6 +854,7 @@
 				3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */,
 				3FFA369C278974DB00E0B288 /* InAppWebViewInteractor.swift in Sources */,
 				3FEE577A2787FB4800FC713E /* TableViewSmallCell.swift in Sources */,
+				3F08304F278A16A700B3F82E /* SelectViewRouter.swift in Sources */,
 				3FEE57732786F2EF00FC713E /* GCDTask.swift in Sources */,
 				3FFA36A62789C89800E0B288 /* UserDefaults+Subscript.swift in Sources */,
 				3FA810E627859E1600C3BFB6 /* TopListViewRouter.swift in Sources */,
@@ -873,16 +864,12 @@
 				3FEE57842787FB9B00FC713E /* TableViewCellInterface.swift in Sources */,
 				3FEE57982788396E00FC713E /* APIService.swift in Sources */,
 				3FCF77942789DC39005C0AEE /* FavoriteListViewRouter.swift in Sources */,
-				3FA810D02785888900C3BFB6 /* HomeTabBarController.swift in Sources */,
-				3FA810D12785888900C3BFB6 /* HomeTabBarPresenter.swift in Sources */,
 				3FA810E427859E0D00C3BFB6 /* TopListViewInteractor.swift in Sources */,
 				3FFA36982789748E00E0B288 /* InAppWebView.swift in Sources */,
-				3FA810D32785888900C3BFB6 /* HomeTabBarRouter.swift in Sources */,
 				3FEE577E2787FB6F00FC713E /* TableViewCellPresenter.swift in Sources */,
 				3FA810B527854E1800C3BFB6 /* Button+XIBLocalizable.swift in Sources */,
 				3FA810AE2784448E00C3BFB6 /* Log.swift in Sources */,
 				3FEE5789278825D900FC713E /* TopModel.swift in Sources */,
-				3FA810D627858EB300C3BFB6 /* HomeTabBarInteractor.swift in Sources */,
 				3FEE57802787FB7D00FC713E /* TableViewCellInteractor.swift in Sources */,
 				3FCF77912789DC39005C0AEE /* FavoriteListViewController.swift in Sources */,
 				3FA810942784042F00C3BFB6 /* Config.swift in Sources */,
@@ -897,6 +884,7 @@
 				3FA810BC27854F0600C3BFB6 /* String+Localized.swift in Sources */,
 				3FA81097278405AB00C3BFB6 /* URL.swift in Sources */,
 				3FEE57702786F2BC00FC713E /* Int+Delay.swift in Sources */,
+				3F083051278A16B400B3F82E /* SelectViewInterface.swift in Sources */,
 				3FEE576C2786DFA600FC713E /* UIView+ActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -905,7 +893,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD8653D2782E49E005A13A6 /* MyAnimeListSampleTests.swift in Sources */,
+				3F083049278A139E00B3F82E /* TopListViewInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

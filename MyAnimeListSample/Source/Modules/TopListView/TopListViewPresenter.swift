@@ -104,10 +104,9 @@ extension TopListViewPresenter: InteractorToPresenterTopListProtocol {
 	}
 	
 	func typeDidChang(type: TopListType) {
-		self.models = nil
 		self.isLoading = true
 		self.isAllFinish = false
-		self.view?.reloadData()
+		self.view?.showLoadingView()
 		
 		self.currentType = type
 		

@@ -30,7 +30,7 @@ extension String {
 	}
 
 	fileprivate func fileToModel<T: Decodable>(_ type: T.Type) -> T? {
-		guard let url = Bundle.main.path(forResource: "mockJson", ofType: "bundle") else { return nil }
+		guard let url = Bundle.main.path(forResource: "MockJson", ofType: "bundle") else { return nil }
 		guard let bundle = Bundle(path: url) else { return nil }
 		guard let file = bundle.path(forResource: self, ofType: "json") else { return nil }
 		guard let json = try? String(contentsOfFile: file, encoding: .utf8) else { return nil }
