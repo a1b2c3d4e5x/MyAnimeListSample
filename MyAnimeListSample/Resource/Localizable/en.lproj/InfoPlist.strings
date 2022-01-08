@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MyAnimeListSample
+
+  Created by GUO-HAO CHEN on 2022/1/4.
+  
+*/
+
+CFBundleDisplayName = "Top Sample";

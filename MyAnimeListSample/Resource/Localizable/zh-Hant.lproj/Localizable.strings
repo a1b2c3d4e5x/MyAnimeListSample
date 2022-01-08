@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MyAnimeListSample
+
+  Created by GUO-HAO CHEN on 2022/1/4.
+  
+*/
+
+"Top Demo" = "熱門範例";
+"Top List" = "熱門列表";
+"Selection View" = "尋找其他類別";
+"Favorite List" = "收藏列表";
+"Delete" = "刪除";
+"Option" = "選項";
+"Oh! It is no more date!" = "噢！沒有更多資料囉！";

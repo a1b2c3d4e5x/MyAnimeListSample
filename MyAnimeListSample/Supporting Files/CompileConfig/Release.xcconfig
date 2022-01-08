@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  MyAnimeListSample
+//
+//  Created by GUO-HAO CHEN on 2022/1/4.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+// Compiler Macro
+CONFIG_FLAG = -DRELEASE
+
+// App
+APP_BUNDLE_ID = com.cgh.sample.MyAnimeListSample.debug

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  MyAnimeListSample
+
+  Created by GUO-HAO CHEN on 2022/1/4.
+  
+*/
+
+"Top Demo" = "Top Demo";
+"Top List" = "Top List";
+"Selection View" = "Selection View";
+"Favorite List" = "Favorite List";
+"Delete" = "Delete";
+"Option" = "Option";
+"Oh! It is no more date!" = "Oh! It is no more date!";
+
