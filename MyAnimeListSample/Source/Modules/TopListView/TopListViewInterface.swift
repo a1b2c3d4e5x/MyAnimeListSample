@@ -35,6 +35,7 @@ protocol PresenterToViewTopListProtocol: AnyObject {
 
 protocol InteractorToPresenterTopListProtocol: AnyObject {
 	func modelDidChange(model: TopModel)
+	func typeDidChang(type: TopListType)
 }
 
 protocol ViewToPresenterTopListProtocol: AnyObject {

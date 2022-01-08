@@ -32,7 +32,15 @@ extension TopListViewRouter: PresenterToRouterTopListProtocol {
 	}
 	
 	func showSelectView() {
+		let viewController: SelectViewController = SelectViewController.storyboard()
+		let navigationController = UINavigationController(rootViewController: viewController)
 		
+		navigationController.modalPresentationStyle = .pageSheet
+		if let sheet = navigationController.sheetPresentationController {
+			sheet.detents = [.medium()]
+		}
+		
+		self.view?.present(navigationController, animated: true, completion: nil)
 	}
 }
 

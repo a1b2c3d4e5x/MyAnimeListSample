@@ -36,6 +36,8 @@ class ObserverService: Notifier {
 
 extension ObserverService {
 	enum NotificationName: String {
+		case topTypeChanged
+		
 		case addFavorite
 		case removeFavorite
 	}

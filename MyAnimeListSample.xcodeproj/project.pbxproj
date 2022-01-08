@@ -40,6 +40,8 @@
 		3FCF77942789DC39005C0AEE /* FavoriteListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF778E2789DC39005C0AEE /* FavoriteListViewRouter.swift */; };
 		3FCF77952789DC39005C0AEE /* FavoriteListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF778F2789DC39005C0AEE /* FavoriteListViewController.storyboard */; };
 		3FCF77982789EBB9005C0AEE /* ObserverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF77972789EBB9005C0AEE /* ObserverService.swift */; };
+		3FCF779A2789F68B005C0AEE /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF77992789F68B005C0AEE /* SelectViewController.swift */; };
+		3FCF779C2789F697005C0AEE /* SelectViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF779B2789F697005C0AEE /* SelectViewController.storyboard */; };
 		3FD865262782E49C005A13A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865252782E49C005A13A6 /* AppDelegate.swift */; };
 		3FD865282782E49C005A13A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD865272782E49C005A13A6 /* SceneDelegate.swift */; };
 		3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD8652E2782E49E005A13A6 /* Assets.xcassets */; };
@@ -141,6 +143,8 @@
 		3FCF778E2789DC39005C0AEE /* FavoriteListViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewRouter.swift; sourceTree = "<group>"; };
 		3FCF778F2789DC39005C0AEE /* FavoriteListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteListViewController.storyboard; sourceTree = "<group>"; };
 		3FCF77972789EBB9005C0AEE /* ObserverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverService.swift; sourceTree = "<group>"; };
+		3FCF77992789F68B005C0AEE /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		3FCF779B2789F697005C0AEE /* SelectViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectViewController.storyboard; sourceTree = "<group>"; };
 		3FD865222782E49C005A13A6 /* MyAnimeListSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAnimeListSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD865252782E49C005A13A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD865272782E49C005A13A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -371,6 +375,8 @@
 		3FA810E92785A11A00C3BFB6 /* SelectView */ = {
 			isa = PBXGroup;
 			children = (
+				3FCF779B2789F697005C0AEE /* SelectViewController.storyboard */,
+				3FCF77992789F68B005C0AEE /* SelectViewController.swift */,
 			);
 			path = SelectView;
 			sourceTree = "<group>";
@@ -800,6 +806,7 @@
 				3FEE57AA2788BD4500FC713E /* NoPicture.dark.pdf in Resources */,
 				3FD865322782E49E005A13A6 /* LaunchScreen.storyboard in Resources */,
 				3FEE57A92788BD4500FC713E /* NoPicture.light.pdf in Resources */,
+				3FCF779C2789F697005C0AEE /* SelectViewController.storyboard in Resources */,
 				3FEE577C2787FB5300FC713E /* TableViewSmallCell.xib in Resources */,
 				3FA810D8278590B400C3BFB6 /* HomeTabBarController.storyboard in Resources */,
 				3FA810A3278440E500C3BFB6 /* InfoPlist.strings in Resources */,
@@ -883,6 +890,7 @@
 				3FFA369A278974CD00E0B288 /* InAppWebViewPresenter.swift in Sources */,
 				3FA810B0278444B700C3BFB6 /* Log+Print.swift in Sources */,
 				3FA810B327854CB400C3BFB6 /* Localizator.swift in Sources */,
+				3FCF779A2789F68B005C0AEE /* SelectViewController.swift in Sources */,
 				3FFA36932789537800E0B288 /* InsetLabel.swift in Sources */,
 				3FA810BF2785501F00C3BFB6 /* GHError.swift in Sources */,
 				3FFA36A32789C6AE00E0B288 /* UserDefaultService.swift in Sources */,

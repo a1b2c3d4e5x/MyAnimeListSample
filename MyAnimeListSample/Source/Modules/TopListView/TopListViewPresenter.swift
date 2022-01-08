@@ -12,7 +12,9 @@ final class TopListViewPresenter {
 	var interactor: PresenterToInteractorTopListProtocol
 	var router: PresenterToRouterTopListProtocol
 	
-	private var currentType: TopListType = .anime(subtype: .airing)
+	private var currentType: TopListType = .anime(subtype: .airing) {
+		didSet { self.updateTypeTitle() }
+	}
 	private var currentPage: Int = 1
 	private var isLoading: Bool = false
 	private var isAllFinish: Bool = false
@@ -30,13 +32,7 @@ final class TopListViewPresenter {
 
 extension TopListViewPresenter: ViewToPresenterTopListProtocol {
 	func viewDidLoad() {
-		let subtype: String = {
-			switch self.currentType {
-			case .anime(let subtype): return subtype.rawValue
-			case .manga(let subtype): return subtype.rawValue
-			}
-		}()
-		self.view?.setCurrentDetail(for: self.currentType.rawValue, subtype: subtype)
+		self.updateTypeTitle()
 		self.reloadDataSource()
 	}
 
@@ -66,8 +62,7 @@ extension TopListViewPresenter: ViewToPresenterTopListProtocol {
 		guard false == self.isLoading else { return }
 		self.isLoading = true
 		self.isAllFinish = false
-		Log.print("reload")
-		
+
 		self.models = nil
 		self.view?.showLoadingView()
 		self.fetchList(page: 1, reset: true) { [weak self] isSucceed in
@@ -85,7 +80,6 @@ extension TopListViewPresenter: ViewToPresenterTopListProtocol {
 	func moreDataSource() {
 		guard false == self.isLoading, false == self.isAllFinish else { return }
 		self.isLoading = true
-		Log.print("more")
 		
 		let count: Int = self.itemCount()
 		self.view?.showLoadingView()
@@ -108,9 +102,39 @@ extension TopListViewPresenter: InteractorToPresenterTopListProtocol {
 		guard let index = self.models?.firstIndex(of: model) else { return }
 		self.view?.reloadData(at: index)
 	}
+	
+	func typeDidChang(type: TopListType) {
+		self.models = nil
+		self.isLoading = true
+		self.isAllFinish = false
+		self.view?.reloadData()
+		
+		self.currentType = type
+		
+		self.fetchList(page: self.currentPage, reset: true) { [weak self] isSucceed in
+			switch isSucceed {
+			case true:
+				self?.view?.reloadData()
+			case false:
+				self?.view?.showEmptyView()
+				self?.isAllFinish = true
+			}
+			self?.isLoading = false
+		}
+	}
 }
 
 extension TopListViewPresenter {
+	private func updateTypeTitle() {
+		let subtype: String = {
+			switch self.currentType {
+			case .anime(let subtype): return subtype.rawValue
+			case .manga(let subtype): return subtype.rawValue
+			}
+		}()
+		self.view?.setCurrentDetail(for: self.currentType.rawValue, subtype: subtype)
+	}
+	
 	private func fetchList(page: Int, reset: Bool, completion: @escaping (Bool) -> Void) {
 		DispatchQueue.global().async {
 			self.interactor.fetchTopList(type: self.currentType, page: page) { (response: GHResult<ResponseTopModel>) in
@@ -134,3 +158,4 @@ extension TopListViewPresenter {
 		}
 	}
 }
+
