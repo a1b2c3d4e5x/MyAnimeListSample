@@ -12,6 +12,7 @@
 		3F08304D278A169E00B3F82E /* SelectViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08304C278A169E00B3F82E /* SelectViewInteractor.swift */; };
 		3F08304F278A16A700B3F82E /* SelectViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08304E278A16A700B3F82E /* SelectViewRouter.swift */; };
 		3F083051278A16B400B3F82E /* SelectViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F083050278A16B400B3F82E /* SelectViewInterface.swift */; };
+		3F083054278A2A5F00B3F82E /* MockJson.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F083053278A2A5F00B3F82E /* MockJson.bundle */; };
 		3FA810942784042F00C3BFB6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA810932784042F00C3BFB6 /* Config.swift */; };
 		3FA81097278405AB00C3BFB6 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA81096278405AB00C3BFB6 /* URL.swift */; };
 		3FA8109F278440DB00C3BFB6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA810A1278440DB00C3BFB6 /* Localizable.strings */; };
@@ -106,6 +107,7 @@
 		3F08304C278A169E00B3F82E /* SelectViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewInteractor.swift; sourceTree = "<group>"; };
 		3F08304E278A16A700B3F82E /* SelectViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewRouter.swift; sourceTree = "<group>"; };
 		3F083050278A16B400B3F82E /* SelectViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewInterface.swift; sourceTree = "<group>"; };
+		3F083053278A2A5F00B3F82E /* MockJson.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MockJson.bundle; sourceTree = "<group>"; };
 		3FA8108F2784025D00C3BFB6 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		3FA810902784027300C3BFB6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		3FA810912784027C00C3BFB6 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -218,6 +220,14 @@
 				3F083048278A139E00B3F82E /* TopListViewInteractorTests.swift */,
 			);
 			path = TopListView;
+			sourceTree = "<group>";
+		};
+		3F083052278A2A3300B3F82E /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				3F083053278A2A5F00B3F82E /* MockJson.bundle */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		3FA8108E278401B000C3BFB6 /* CompileConfig */ = {
@@ -444,6 +454,7 @@
 		3FD865552782E970005A13A6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F083052278A2A3300B3F82E /* Bundle */,
 				3FEE57A52788BD4500FC713E /* Images */,
 				3FA810982784402500C3BFB6 /* Localizable */,
 				3FD8652E2782E49E005A13A6 /* Assets.xcassets */,
@@ -789,6 +800,7 @@
 				3FA810A3278440E500C3BFB6 /* InfoPlist.strings in Resources */,
 				3FA8109F278440DB00C3BFB6 /* Localizable.strings in Resources */,
 				3FD8652F2782E49E005A13A6 /* Assets.xcassets in Resources */,
+				3F083054278A2A5F00B3F82E /* MockJson.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

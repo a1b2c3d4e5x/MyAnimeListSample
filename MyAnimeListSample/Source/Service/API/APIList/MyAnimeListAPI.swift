@@ -5,7 +5,7 @@
 //  Created by GUO-HAO CHEN on 2022/1/7.
 //
 
-enum TopListType {
+enum TopListType: Equatable {
 	case anime(subtype: AnimeSubtype)
 	case manga(subtype: MangaSubtype)
 	
