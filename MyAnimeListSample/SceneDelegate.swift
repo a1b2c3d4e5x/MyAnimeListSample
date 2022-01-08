@@ -51,17 +51,9 @@ extension SceneDelegate {
 	private func configInitViewController(scene: UIWindowScene) {
 		let window = UIWindow(windowScene: scene)
 		
-		let v = UIViewController()
-		v.view.backgroundColor = .red
-		v.tabBarItem = UITabBarItem(title: "test", image: nil, selectedImage: nil)
-		let c = UIViewController()
-		c.view.backgroundColor = .blue
-		c.tabBarItem.title = "123"
-		
-		let tabs: HomeTabs = HomeTabs(v, c)
-		let tabBarController = HomeTabBarRouter.createModule(submodules: tabs)
-		
-		window.rootViewController = tabBarController
+		let topListViewController = TopListViewRouter.createModule()
+		let navigationViewController = UINavigationController(rootViewController: topListViewController)
+		window.rootViewController = navigationViewController
 		window.makeKeyAndVisible()
 		
 		self.window = window

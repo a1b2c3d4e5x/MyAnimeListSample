@@ -9,7 +9,7 @@ import Foundation
 
 let Log = GHTool.shared
 
-class GHTool {
+final class GHTool {
 	static let shared: GHTool = GHTool()
 	private init () { }
 }
